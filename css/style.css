@@ -1,0 +1,307 @@
+*{/*quitar los estilos del navegador por defaul*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --letra: 'Hina Mincho';
+}
+/**BODY**/
+body{
+    background-color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 16px;
+}
+    /**HEADER**/
+            /**Carrusel de Imagenes**/
+#imagenes{
+    height: 300px;
+    overflow: hidden;/*Recorta los elementos que no estan dentro de su altura*/
+}
+.carrusel{
+    height: 100%;/*Toma el alto de #imagenes*/
+    position:relative ;
+}
+.contenido{
+    
+    height: 100%;/*Toma el alto de #imagenes*/
+}
+.flechas{
+    height: 100%;/*Toma el alto de #imagenes*/
+    position: absolute;/*se pone con respecto a carrusel*/
+    top: 0;
+    width: 100%;/*Tiene ancho y alto igual que carrusel*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+#imagenes img{
+    width: 100%;
+    height: 100%;
+}
+#imagenes a{
+    text-decoration: none;
+}
+#imagenes i{
+    color: red;
+}
+#Puntos{
+
+ display: flex;
+ justify-content: space-around;
+}
+
+#Puntos > a{
+    font-size: 2em;
+    text-decoration: none;
+    color: darkblue;
+}
+
+            /** Menu y logo**/
+.barra{
+    width: 1300px;
+    height: 60px;
+    
+    /*background-color:mediumblue;*/
+}
+.menu{
+    width: 1100px;
+    height: 50px;  
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+    text-align: center;
+   /* background-color:lightslategrey;*/
+}
+.menu a{
+    color: black;
+    text-decoration:  none;
+    margin-top: 10px;  
+    padding: 20px;
+}
+.menu a:hover{
+    background: rgb(15, 36, 221);
+}
+.logo{
+    width: 100px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 30px;
+    float: left;
+    /*background-color: red;*/
+}
+
+main{
+    width: 100%;
+    height: 500px;
+}
+#izq{
+    height: 100%;
+    width: 200px;
+    background: white;
+    text-align: center;
+    float: left;
+}
+#izq h2{
+    margin: 40px;
+}
+#izq ul{
+    text-decoration: none;
+}
+#izq li{
+    
+    margin-top: 40px;
+}
+
+#izq a{
+    color: black;
+    text-decoration:  none;
+}
+#izq a:hover{
+    background: rgb(15, 36, 221);
+}
+
+article{
+    height: 100%;
+    width: 948px;
+    /*background: lightgreen;*/
+    text-align: center;
+    float: left;
+    box-sizing:border-box ;
+
+
+}
+#productos{
+    
+    height: 500px;
+    overflow: hidden;
+}
+.carrusel1{
+    
+    height: 100%;
+    position: relative;
+}
+.contenido1{
+    height: 100%;
+    
+}
+.flechas1{
+    
+    position:absolute;
+    height: 100%;
+    top:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#productos a{
+    text-decoration: none;
+}
+#productos i{
+    color: grey;
+}
+
+#der{
+    height: 100%;
+    width: 200px;
+    background: white;
+    text-align: center;
+    float: right;
+}
+#der p{
+    float: left;
+     transform: rotate(90deg);
+     transform-origin: left top 0;
+     margin: 145px;
+     padding: 10px;
+     background-color: rgba(37, 34, 34, 0.3);
+     opacity: 0.9;
+     font-size: 1.8em;
+     color: rgb(15, 36, 221);
+      text-transform: uppercase;
+}
+footer{
+    width: 100%;
+    height: auto;
+    
+
+}
+footer a{
+    text-decoration: none;
+}
+
+.contacto{
+    width: 90%;
+    max-width: 1000px;
+    background:lightgrey;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0px 1px 2px rgba(0, 0,0, .5);
+}
+
+.contacto h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(15, 36, 221);
+}
+.espacio{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.espacio.info,
+.espacio.formulario{
+    width: 50%;
+}
+
+.info{
+    padding-left: 10px;
+}
+.info .col{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.info .col .icono{
+    color: rgb(15, 36, 221);
+    margin-right: 10px;
+
+}
+.info .col{
+    color: darkslategrey;
+}
+.info .redes{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info .redes a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: rgb(15, 36, 221);
+    color: #fff;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
+
+}
+.info .redes a:hover{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
+    background: #000;
+}
+
+.formulario{
+    padding: 10px;
+
+}
+.formulario input[type='text'],
+.formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid darkslategrey;
+    color:darkslategrey;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    outline: 0;
+
+}
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+}
+        
+.formulario input[type='text']:focus,
+.formulario textarea:focus{
+
+    border: 1px solid rgb(15, 36, 221);
+
+}
+.formulario button{
+    padding: 12px 30px;
+    border: transparent;
+    background:rgb(15, 36, 221);
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+
+
